@@ -16,8 +16,10 @@
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   background: #ffffff;
+  color: var(--title-color);
+  font-weight: 400;
 }
 
 /*=============HEADER=============*/
@@ -41,7 +43,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-color);
 }
 
 .header-nav-link:hover,
@@ -88,6 +89,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--accent-color);
+  cursor: pointer;
 }
 
 .about-list-title {
@@ -96,11 +98,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-color);
 }
 
 .about-list-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -113,7 +113,6 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
 }
 
 .team {
@@ -126,11 +125,9 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -141,33 +138,30 @@ body {
 
 /*=============MAIN PORTFOLIO=============*/
 
-.filter-list-link {
+.filter-list-btn {
   background: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  cursor: pointer;
 }
 
-.filter-list-link:hover,
-.filter-list-link:focus {
+.filter-list-btn:hover,
+.filter-list-btn:focus {
   color: #ffffff;
   background: #2196f3;
 }
 
 .project-title {
-  font-weight: 400;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  color: var(--title-color);
 }
 
 .project-type {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -185,20 +179,30 @@ body {
 }
 
 .address-map {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
+.address-map:hover,
+.address-map:focus {
+  color: #2196f3;
+}
+
 .address-mail,
 .address-tel {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail:hover,
+.address-tel:hover,
+.address-mail:focus,
+.address-tel:focus {
+  color: #2196f3;
 }
 
 /*=============FOOTER END=============*/
