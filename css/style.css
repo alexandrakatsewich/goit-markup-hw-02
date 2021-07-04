@@ -6,6 +6,28 @@
   --accent-color: #2196f3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -22,10 +44,28 @@ body {
   font-weight: 400;
 }
 
+/*=============CONTAINER=============*/
+.container {
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+/*=============COMPONENTS=============*/
+
 /*=============HEADER=============*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo,
 .footer-logo {
+  margin-right: 90px;
+  margin-left: 0;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -38,6 +78,11 @@ body {
   color: #000000;
 }
 
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -48,6 +93,11 @@ body {
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
 }
 
 .header-mail-link {
